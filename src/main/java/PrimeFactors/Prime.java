@@ -25,4 +25,9 @@ public class Prime {
 //        System.out.println(list.stream().sorted().map(String::valueOf).reduce((a,b) -> a +"," +b).get());
         System.out.println(list);
     }
+
+    public void generate() {
+        findPrime();
+        print();
+    }
 }
