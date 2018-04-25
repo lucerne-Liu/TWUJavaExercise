@@ -9,9 +9,9 @@ public class Diamond {
         this.lines = lines;
         isoscelesTriangle = new IsoscelesTriangle(lines);
     }
-
-    public IsoscelesTriangle getIsoscelesTriangle() {
-        return isoscelesTriangle;
+    public Diamond(int lines, String name) {
+        this.lines = lines;
+        isoscelesTriangle = new IsoscelesTriangle(lines, name);
     }
 
     public void printDiamond(boolean hasNameInside) {

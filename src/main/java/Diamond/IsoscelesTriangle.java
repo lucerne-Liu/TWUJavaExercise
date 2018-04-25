@@ -16,10 +16,6 @@ public class IsoscelesTriangle {
         this.name = name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String printAsterisks(int asterisksNumber) {
         return IntStream.range(0, asterisksNumber).mapToObj(item -> ASTERISK).reduce("", String::concat);
     }

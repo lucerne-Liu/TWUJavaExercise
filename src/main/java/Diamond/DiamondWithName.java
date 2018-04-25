@@ -1,15 +1,13 @@
 package Diamond;
 
-import javax.print.DocFlavor;
 
-public class DiamondWithName extends Diamond{
+public class DiamondWithName extends Diamond {
     private String name;
 
 
     public DiamondWithName(String name, int lines) {
-        super(lines);
+        super(lines, name);
         this.name = name;
-        getIsoscelesTriangle().setName(name);
     }
 
     public static void main(String[] args) {
@@ -21,6 +19,6 @@ public class DiamondWithName extends Diamond{
 //              *
         String name = "Bill";
         int n = 3;
-        new DiamondWithName(name,n).printDiamond(true);
+        new DiamondWithName(name, n).printDiamond(true);
     }
 }
