@@ -22,6 +22,7 @@ public class Prime {
     }
 
     public void print() {
-        System.out.println(list.stream().sorted().map(String::valueOf).reduce((a,b) -> a +"," +b).get());
+//        System.out.println(list.stream().sorted().map(String::valueOf).reduce((a,b) -> a +"," +b).get());
+        System.out.println(list);
     }
 }
